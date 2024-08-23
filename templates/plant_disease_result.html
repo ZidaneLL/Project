@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('{{ url_for("static", filename="pics/farmer2.jpg") }}'); /* Background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+        h1 {
+            color: #008000; /* Dark green text */
+        }
+        .result {
+            margin-top: 20px;
+            color: #606060; /* Dark grey text */
+        }
+        .result img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #4CAF50; /* Green button */
+            border: none;
+            color: white;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 15px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+        .taskbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(0, 0, 0, 0.1); /* Dark semi-transparent background */
+            position: relative;
+            width: 100%;
+            top: 0;
+        }
+        .taskbar a, .taskbar img {
+            margin: 0 10px;
+        }
+        .taskbar a {
+            color: white;
+            
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 10px;
+            position: relative;
+        }
+        .taskbar a::after{
+            content: '';
+            height: 3px;
+            width: 0;
+            background: #4CAF50;
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+            transition: 0.5s;
+        }
+        .taskbar a:hover::after {
+            width: 100%;
+        }
+
+        .dropdown {
+            position: center;
+            display: flex;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-top: 40px;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 10px 22px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="taskbar">
+
+        <a href="/">Home</a>
+        <a href="/crop_recommendation">Crop Recommender</a>
+
+        <div class="dropdown">
+            <a href="#">Predict The Future</a>
+            <div class="dropdown-content">
+                <a href="/yields">Yield</a>
+                <a href="/products">Production</a>
+                <a href="/area_harvested">Area Harvested</a>
+            </div>
+        </div>
+
+        <a href="/chatbot">Inquiries</a>
+        <a href="/plant_disease">Plant Disease</a>
+    </div>
+
+    <div class="container">
+        <h1>Plant Disease Detection</h1>
+        <div class="prediction">
+            <h2>Prediction: {{ prediction }}</h2>
+            <img src="{{ url_for('static', filename='uploads/' ~ filename) }}" alt="Uploaded Image">
+        </div>
+        <div class="treatment">
+            <h3>Information:</h3>
+            <p>{{ treatments.description1 }}</p>
+            <p>{{ treatments.description2 }}</p>
+            <p>{{ treatments.description3 }}</p>
+            <p>{{ treatments.description4 }}</p>
+            <p>{{ treatments.description5 }}</p>
+            <p>{{ treatments.description6 }}</p>
+            <p>{{ treatments.description7 }}</p>
+            <p>{{ treatments.description8 }}</p>
+            <p>{{ treatments.description9 }}</p>
+            <h4>Treatment Tips:</h4>
+            <p>{{ treatments.solution1 }}</p>
+            <p>{{ treatments.solution2 }}</p>
+            <p>{{ treatments.solution3 }}</p>
+            <p>{{ treatments.solution4 }}</p>
+            <p>{{ treatments.solution5 }}</p>
+            <p>{{ treatments.solution6 }}</p>
+            <p>{{ treatments.solution7 }}</p>
+            <p>{{ treatments.solution8 }}</p>
+            <p>{{ treatments.solution9 }}</p>
+        </div>
+        <a class="button" href="/plant_disease">Upload Another Image</a>
+        <a class="button" href="/">Back to Home</a>
+    </div>
+</body>
+</html>

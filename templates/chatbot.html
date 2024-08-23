@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('{{ url_for("static", filename="pics/farmer2.jpg") }}'); /* Background image */
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 100px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+        h1 {
+            color: #008000; /* Dark green text */
+        }
+        .chat-container {
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ccc; /* Light grey border */
+            border-radius: 5px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .user-message {
+            background-color: #f0f0f0; /* Light grey background for user messages */
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            text-align: left;
+        }
+        .bot-message {
+            background-color: #d3f8d3; /* Light green background for bot messages */
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            text-align: left;
+        }
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #606060; /* Dark grey text */
+        }
+        input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc; /* Light grey border */
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #808080; /* Grey button */
+            color: #ffffff; /* White text */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #606060; /* Darker grey on hover */
+        }
+        .taskbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(0, 0, 0, 0.1); /* Dark semi-transparent background */
+            position: relative;
+            width: 100%;
+            top: 0;
+        }
+        .taskbar a, .taskbar img {
+            margin: 0 10px;
+        }
+        .taskbar a {
+            color: white;
+            
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 10px;
+            position: relative;
+        }
+        .taskbar a::after{
+            content: '';
+            height: 3px;
+            width: 0;
+            background: #4CAF50;
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+            transition: 0.5s;
+        }
+        .taskbar a:hover::after {
+            width: 100%;
+        }
+        .button {
+            display: inline-block;
+            background-color: #4CAF50; /* Green button */
+            border: none;
+            color: white;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 15px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .button:hover {
+            background-color: #45a049; /* Darker grey on hover */
+        }
+
+        .dropdown {
+            position: center;
+            display: flex;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-top: 40px;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 10px 22px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="taskbar">
+
+        <a href="/">Home</a>
+        <a href="/crop_recommendation">Crop Recommender</a>
+
+        <div class="dropdown">
+            <a href="#">Predict The Future</a>
+            <div class="dropdown-content">
+                <a href="/yields">Yield</a>
+                <a href="/products">Production</a>
+                <a href="/area_harvested">Area Harvested</a>
+            </div>
+        </div>
+
+        <a href="/chatbot">Inquiries</a>
+        <a href="/plant_disease">Plant Disease</a>
+    </div>
+    <div class="container">
+        <h1>Chatbot</h1>
+        
+        <div class="chat-container" id="chat-container">
+            <div class="bot-message">
+                <strong>Question:</strong> What is your inquiry?
+            </div>
+            {% if question %}
+            <div class="user-message">
+                <strong>You:</strong> {{ question }}
+            </div>
+            <div class="bot-message">
+                <strong>Answer:</strong> {{ answer }}
+            </div>
+            {% endif %}
+        </div>
+
+        <form id="chat-form" action="/chatbot" method="post">
+            <label for="user_input">Your message:</label>
+            <input type="text" id="user_input" name="user_input" required autocomplete="off">
+            <button type="submit">Send</button>
+        </form>
+        
+        <a class="button" href="/">Back to Home</a>
+    </div>
+    
+    <script>
+        // Auto-scroll to the bottom of chat container
+        const chatContainer = document.getElementById('chat-container');
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+    </script>
+</body>
+</html>

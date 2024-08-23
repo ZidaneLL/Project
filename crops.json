@@ -1,0 +1,179 @@
+{
+    "0": [
+        {
+            "Name": "apple",
+            "Introduction": "Apples are a popular fruit known for their crisp texture and sweet flavor. They are one of the most widely consumed fruits in the world.",
+            "Benefits": "Apples are rich in dietary fiber, vitamins, and antioxidants. They support heart health, aid digestion, and help in weight management.",
+            "Usage": "Apples can be eaten fresh, used in baking (like pies and crisps), or made into sauces, juices, and jams."
+        }
+    ],
+    "1": [
+        {
+            "Name": "maize",
+            "Introduction": "Maize, or corn, is a staple grain crop in many countries. It is a major food source and industrial product.",
+            "Benefits": "Maize provides essential carbohydrates, fiber, and B vitamins. It supports energy levels and digestive health.",
+            "Usage": "Maize can be used as a fresh vegetable, processed into cornmeal, corn syrup, or used in animal feed and biofuel production."
+        }
+    ],
+    "2": [
+        {
+            "Name": "chickpea",
+            "Introduction": "Chickpeas are small, round legumes with a nutty flavor and starchy texture. They are a key ingredient in many dishes around the world.",
+            "Benefits": "Chickpeas are high in protein, fiber, and several essential vitamins and minerals. They support heart health, digestion, and muscle growth.",
+            "Usage": "Chickpeas are used in salads, soups, and stews. They are also ground into flour or made into hummus and falafel."
+        }
+    ],
+    "3": [
+        {
+            "Name": "kidneybeans",
+            "Introduction": "Kidney beans are large, red legumes known for their kidney shape and rich flavor. They are commonly used in various cuisines.",
+            "Benefits": "Kidney beans are rich in protein, fiber, and essential nutrients. They help with digestion, support heart health, and regulate blood sugar levels.",
+            "Usage": "Kidney beans are used in chili, soups, stews, and salads. They are also a common ingredient in vegetarian dishes."
+        }
+    ],
+    "4": [
+        {
+            "Name": "pigeonpeas",
+            "Introduction": "Pigeon peas are small, oval legumes known for their nutty flavor and firm texture. They are commonly grown in tropical regions.",
+            "Benefits": "Pigeon peas are high in protein, fiber, and important vitamins and minerals. They support digestive health, provide energy, and aid in muscle repair.",
+            "Usage": "Pigeon peas are used in curries, soups, and rice dishes. They are also used in making dal and as a side dish in various cuisines."
+        }
+    ],
+    "5": [
+        {
+            "Name": "mothbeans",
+            "Introduction": "Moth beans are small, round legumes with a slightly nutty flavor. They are commonly grown in arid regions.",
+            "Benefits": "Moth beans are rich in protein, fiber, and several essential nutrients. They aid in digestion, support muscle growth, and provide energy.",
+            "Usage": "Moth beans are used in soups, stews, and curries. They can also be sprouted for added nutrition and used in salads."
+        }
+    ],
+    "6": [
+        {
+            "Name": "mungbean",
+            "Introduction": "Mungbeans are small, green legumes known for their high nutritional value and versatility in cooking.",
+            "Benefits": "Mungbeans are rich in protein, fiber, vitamins, and minerals. They support digestive health, boost energy levels, and help in maintaining healthy skin.",
+            "Usage": "Mungbeans can be eaten cooked in soups and stews, or sprouted and added to salads. They are also used in various Asian dishes and desserts."
+        }
+    ],
+    "7": [
+        {
+            "Name": "rice",
+            "Introduction": "Rice is a staple grain crop grown worldwide. It is a primary food source for more than half of the world's population.",
+            "Benefits": "Rice provides essential carbohydrates, vitamins, and minerals. It supports energy levels and is a crucial part of many diets.",
+            "Usage": "Rice can be cooked as a side dish, used in salads, soups, and various international cuisines. It is also used to make rice flour and rice-based beverages."
+        }
+    ],
+    "8": [
+        {
+            "Name": "blackgram",
+            "Introduction": "Blackgram, also known as urad bean, is a small, black legume with a rich, nutty flavor. It is widely grown in tropical and subtropical regions.",
+            "Benefits": "Blackgram is high in protein, fiber, and essential vitamins and minerals. It supports digestive health, aids in muscle repair, and provides energy.",
+            "Usage": "Blackgram is used in various Indian dishes such as dal, dosa, and idli. It can also be sprouted and added to salads."
+        }
+    ],
+    "9": [
+        {
+            "Name": "lentil",
+            "Introduction": "Lentils are small, round legumes that come in a variety of colors including green, brown, and red. They are a staple in many diets worldwide.",
+            "Benefits": "Lentils are rich in protein, fiber, iron, and B vitamins. They help with digestion, support heart health, and provide sustained energy.",
+            "Usage": "Lentils can be used in soups, stews, and salads. They are also used to make lentil patties and are a common ingredient in vegetarian and vegan dishes."
+        }
+    ],
+    "10": [
+        {
+            "Name": "pomegranate",
+            "Introduction": "Pomegranate is a fruit with a tough outer skin and numerous edible seeds, known for its sweet and tangy flavor. It is native to the Mediterranean region.",
+            "Benefits": "Pomegranates are high in antioxidants, vitamins, and minerals. They support heart health, improve memory, and may reduce inflammation.",
+            "Usage": "Pomegranates can be eaten fresh, used in juices, or added to salads and desserts. The seeds can also be used as a garnish."
+        }
+    ],
+    "11": [
+        {
+            "Name": "banana",
+            "Introduction": "Bananas are a tropical fruit known for their sweet taste and soft, creamy texture. They are one of the most popular fruits globally.",
+            "Benefits": "Bananas are rich in potassium, vitamin C, and dietary fiber. They support heart health, aid digestion, and provide quick energy.",
+            "Usage": "Bananas can be eaten fresh, added to smoothies, or used in baking such as banana bread. They are also a common ingredient in breakfast dishes and desserts."
+        }
+    ],
+    "12": [
+        {
+            "Name": "mango",
+            "Introduction": "Mango is a tropical stone fruit known for its sweet and juicy flesh. It is often referred to as the 'king of fruits.'",
+            "Benefits": "Mangoes are rich in vitamins A and C, fiber, and antioxidants. They support eye health, boost immunity, and improve digestion.",
+            "Usage": "Mangoes can be eaten fresh, used in smoothies, or added to salads and salsas. They are also used in desserts like mango pudding and ice cream."
+        }
+    ],
+    "13": [
+        {
+            "Name": "grapes",
+            "Introduction": "Grapes are small, round fruits that come in various colors such as green, red, and purple. They are commonly used for fresh eating or making wine.",
+            "Benefits": "Grapes are rich in vitamins C and K, antioxidants, and fiber. They support heart health, improve skin health, and may have anti-inflammatory properties.",
+            "Usage": "Grapes can be eaten fresh, used in fruit salads, or made into juice and wine. They are also used in baking and as a garnish."
+        }
+    ],
+    "14": [
+        {
+            "Name": "orange",
+            "Introduction": "Oranges are citrus fruits known for their bright color and tangy flavor. They are a popular fruit for fresh eating and juicing.",
+            "Benefits": "Oranges are high in vitamin C, fiber, and antioxidants. They boost the immune system, support skin health, and aid digestion.",
+            "Usage": "Oranges can be eaten fresh, juiced, or added to salads and desserts. Orange zest and juice are also used in cooking for added flavor."
+        }
+    ],
+    "15": [
+        {
+            "Name": "papaya",
+            "Introduction": "Papaya is a tropical fruit with a sweet, orange flesh and a smooth texture. It is known for its unique flavor and nutritional Benefits.",
+            "Benefits": "Papayas are rich in vitamins A and C, folate, and digestive enzymes. They support immune health, improve digestion, and enhance skin health.",
+            "Usage": "Papayas can be eaten fresh, used in smoothies, or added to salads and desserts. They are also used in cooking and as a meat tenderizer."
+        }
+    ],
+    "16": [
+        {
+            "Name": "muskmelon",
+            "Introduction": "Muskmelon, also known as cantaloupe, is a sweet, juicy fruit with a fragrant aroma. It is commonly enjoyed fresh and is popular in summer.",
+            "Benefits": "Muskmelon is high in vitamins A and C, and contains antioxidants. It supports hydration, improves skin health, and boosts the immune system.",
+            "Usage": "Muskmelon can be eaten fresh, used in fruit salads, or blended into smoothies. It is also used in desserts and as a garnish."
+        }
+    ],
+    "17": [
+        {
+            "Name": "coconut",
+            "Introduction": "Coconut is a tropical fruit with a tough outer shell and a nutrient-rich inner flesh and water. It is widely used in cooking and baking.",
+            "Benefits": "Coconut provides healthy fats, vitamins, and minerals. It supports heart health, aids digestion, and provides hydration.",
+            "Usage": "Coconut can be eaten fresh, used in cooking and baking, or consumed as coconut water. Coconut oil is also used for cooking and skincare."
+        }
+    ],
+    "18": [
+        {
+            "Name": "jute",
+            "Introduction": "Jute is a natural fiber obtained from the stem of the jute plant. It is widely used in making ropes, bags, and textiles.",
+            "Benefits": "Jute is biodegradable and eco-friendly. It provides a sustainable alternative to synthetic fibers and supports environmental conservation.",
+            "Usage": "Jute fibers are used in making burlap, sacks, ropes, and other woven products. It is also used in gardening and erosion control."
+        }
+    ],
+    "19": [
+        {
+            "Name": "coffee",
+            "Introduction": "Coffee is a popular beverage made from roasted coffee beans. It is known for its stimulating effects and rich flavor.",
+            "Benefits": "Coffee is a source of antioxidants and may improve mental alertness, boost metabolism, and support liver health.",
+            "Usage": "Coffee can be brewed and consumed as a hot or cold beverage. It is also used in cooking and baking to enhance flavor."
+        }
+    ],
+    "20": [
+        {
+            "Name": "cotton",
+            "Introduction": "Cotton is a soft fiber obtained from the seeds of the cotton plant. It is widely used in the textile industry for making clothes and fabrics.",
+            "Benefits": "Cotton is a versatile and breathable fabric. It is comfortable to wear, durable, and widely used in various textile products.",
+            "Usage": "Cotton is used to make clothing, bed linens, and other fabric products. It is also used in medical supplies and industrial applications."
+        }
+    ],
+    "21": [
+        {
+            "Name": "watermelon",
+            "Introduction": "Watermelon is a large, juicy fruit with a high water content. It is popular in summer for its refreshing taste and hydrating properties.",
+            "Benefits": "Watermelon is high in vitamins A and C, and provides hydration and antioxidants. It supports skin health, digestion, and overall well-being.",
+            "Usage": "Watermelon can be eaten fresh, used in fruit salads, or blended into smoothies and juices. It is also used as a garnish and in desserts."
+        }
+    ]
+
+}
