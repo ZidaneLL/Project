@@ -18,13 +18,13 @@ import tensorflow as tf
 
 # Initialize Flask application
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'C:/Users/zidan/OneDrive/Documents/Stuff/crop disease/Web/static/uploads'
+app.config['UPLOAD_FOLDER'] = 'C:/Users/zidan/OneDrive/Documents/Stuff/crop disease/functions/static/uploads'
 
 # Directories
-model_directory = r'C:\Users\zidan\OneDrive\Documents\Stuff\crop disease\Web'  
-image_directory = r'C:\Users\zidan\OneDrive\Documents\Stuff\crop disease\Web\static\pics'
-chatbot_data_path = r'C:\Users\zidan\OneDrive\Documents\Stuff\crop disease\data\AgroQA Dataset.csv'
-plant_disease_model_path = os.path.join(model_directory, 'crop_Disease.keras')
+model_directory = r'C:\Users\zidan\OneDrive\Documents\Stuff\crop disease\functions'  
+image_directory = r'C:\Users\zidan\OneDrive\Documents\Stuff\crop disease\functions\static\pics'
+chatbot_data_path = r'C:\Users\zidan\OneDrive\Documents\Stuff\crop disease\functions\AgroQA Dataset.csv'
+# plant_disease_model_path = os.path.join(model_directory, 'crop_Disease.keras')
 
 os.chdir(model_directory)
 
@@ -51,8 +51,8 @@ chatbot_questions_vectorized = vectorizer.fit_transform(chatbot_data['Question']
 
 # Load plant disease model
 ##------NEED KERAS 3.3.3 VERSION TO LOAD MODEL BELOW---------##
-plant_disease_model = load_model('C:/Users/zidan/OneDrive/Documents/Stuff/crop disease/Web/plant_disease.keras')
-label_encoder_path = 'C:/Users/zidan/OneDrive/Documents/Stuff/crop disease/Web/class_indices.json'
+plant_disease_model = load_model('C:/Users/zidan/OneDrive/Documents/Stuff/crop disease/functions/plant_disease.keras')
+label_encoder_path = 'C:/Users/zidan/OneDrive/Documents/Stuff/crop disease/functions/class_indices.json'
 
 THRESHOLD = 0.8
 
