@@ -1,0 +1,15 @@
+pandas
+numpy
+scikit-learn
+joblib
+scipy
+opencv-python-headless
+seaborn
+matplotlib
+tqdm
+Pillow
+tensorflow
+flask
+werkzeug
+keras
+pickle5
